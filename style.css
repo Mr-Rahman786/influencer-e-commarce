@@ -98,3 +98,43 @@ hr{
     margin-left: 5%;
 }
 
+
+/* Thirts Section */
+.grid-item{
+    width: 80%;
+    align-items: center;
+    /* background-color: brown; */
+    position: relative;
+    left: 150px;
+
+}
+.flex-item{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* position: relative; */
+    /* left: 100px; */
+    grid-row-gap: 5%;
+    grid-column-gap: 8%;
+}
+.first-item{
+    box-shadow: 5px 2px 40px black;
+    padding: 15px;
+    border-radius: 10px;
+}
+.first-item img{
+    width: 100%;
+}
+.icons-flex{
+    display: flex;
+    align-items: center;
+}
+.icon-star{
+    color: rgb(50, 43, 2);
+    font-size: 10px;
+}
+
+.review{
+    margin-left: 3%;
+}
+/* last-section */
+
