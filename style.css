@@ -1,5 +1,6 @@
 /* Font */
 @import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@700&display=swap');
 
 
 /* font-finished */
@@ -17,6 +18,9 @@ nav{
     color: whitesmoke;
 
 }
+/* .nav-item-2{
+    display: none;
+} */
 .menu-bar{
     display: flex;
     /* justify-content: space-evenly; */
@@ -29,6 +33,16 @@ nav{
     font-size: 13px;
     color: white;
     
+}
+.nav-item-2{
+    position: relative;
+    left: 30%;
+    margin-left: 3%;
+    font-size: 13px;
+    color: white;
+    font-size: 2.5rem;
+    margin-left: 5%;
+    display: none;
 }
 .nav-item-1{
     font-size: 2.5rem;
@@ -62,6 +76,23 @@ nav{
     /* margin-top: 20px; */
 
 }
+.btn-02{
+    background-color: crimson;
+    text-decoration: none;
+    color: white;
+    padding: 10px 5px;
+    border-radius: 10px;
+    transform: 1.5;
+    display: none;
+}
+.btn-03{
+    background-color: crimson;
+    text-decoration: none;
+    color: white;
+    padding: 15px 40px;
+    border-radius: 10px;
+    transform: 1.5;
+}
 
 .btn-01:hover{
     background-color: white;
@@ -82,11 +113,27 @@ nav{
 }
 /* First Section finished */
 
+
 hr{
     width: 80%;
     color: orangered;
     opacity: 0.2;
     border: 1px solid orangered;
+}
+.second-section-main{
+    margin-top: 10%;
+}
+.second-section-header{
+    text-align: center;
+    margin-bottom: 5%;
+    font-size: 5rem;
+    font-family: 'Qwitcher Grypen', cursive;
+    color: crimson;
+}
+.collection{
+    font-family: 'Aboreto', cursive;
+    font-size: 1rem;
+    color: black;
 }
 .logo-section{
     display: flex;
@@ -136,5 +183,121 @@ hr{
 .review{
     margin-left: 3%;
 }
-/* last-section */
+/*----------------------------------------- 
+    last-section 
+-----------------------------------------------*/
 
+.last-section{
+    margin-top:25% ;
+    width: 80%;
+    /* background-color: violet; */
+    position: relative;
+    left: 150px;
+
+}
+.fiture-produts-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.half-width{
+    width: 50%;
+}
+.half-width img{
+    width: 80%;
+}
+
+
+/* footer section */
+.footer-main-section{
+    margin-top: 10%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+}
+.footer-icon-flex{
+    display: flex;
+}
+.footer-icons{
+    margin: 10px;
+    font-size: 1.4rem;
+}
+
+
+/* ----------------------------
+    @mediaa queries
+--------------------------------- */
+
+@media screen and (max-width:576px){
+    .first-section{
+    flex-direction:column;
+    }
+    .nav-item{
+        display: none;
+    }
+    .nav-item-1{
+        display: none;
+    }
+    .nav-item-2{
+        display: block;
+        font-size: 1.5rem;
+    }
+    .first-section-titale{
+        order: 1;
+    }
+    .btn-01{
+        display: none;
+    }
+    .btn-02{
+        display: block;
+        width: 50%;
+        text-align: center;
+        margin-left: 25%;
+    }
+    .logo-section{
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .logo-item{
+        padding: 8px;
+        margin-left: 20px;
+    }
+    .grid-item{
+        width: 90%;
+        position: relative;
+        left: 0px;
+        margin: 0;
+        padding-left: 5%;
+    }
+    .second-section-header{
+        text-align: center;
+    }
+    .flex-item{
+        grid-template-columns:repeat(1, 1fr);
+        margin: 0;
+        grid-row-gap: 1%;
+        grid-column-gap: 1%;
+    }
+    .first-item{
+        padding-right: 15px;
+    }
+
+    .last-section{
+        left: 0;
+    }
+    .half-width{
+        width: 100%;
+        margin-left: 30px;
+    }
+    .fiture-produts-section{
+        flex-direction: column;
+        margin-top: 500px;
+        padding-left: 10%;
+    }
+    .fiture-produts-section img{
+        width: 100%;
+    }
+}
